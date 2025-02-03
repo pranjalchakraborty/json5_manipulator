@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 import os
-import json
+import json5 as json
 import shutil
 from pathlib import Path
 import sys
@@ -19,7 +19,7 @@ def save_json(data, file_path):
     """Save Python object as JSON with indentation."""
     try:
         with open(file_path, 'w', encoding='utf-8') as f:
-            json.dump(data, f, indent=4, ensure_ascii=False)
+            json.dump(data, f, indent=4, ensure_ascii=False, quote_keys=True)
     except Exception as e:
         print(f"Could not save {file_path}: {e}")
 

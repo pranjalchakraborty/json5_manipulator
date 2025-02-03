@@ -14,8 +14,8 @@
                 "output_executable": "./scripts/report_new_id.exe"
             },
             {
-                "source": "./scripts/fix_trailing_comma.py",
-                "output_executable": "./scripts/fix_trailing_comma.exe"
+                "source": "./scripts/alphabetic_sort.py",
+                "output_executable": "./scripts/alphabetic_sort.exe"
             },
             {
                 "source": "./scripts/field_editor.py",
@@ -37,6 +37,10 @@
                 "destination": "./package/"
             },
             {
+                "source": "./change_notes.txt",
+                "destination": "./package/"
+            },
+            {
                 "source": "./scripts_config.json",
                 "destination": "./package/"
             },
@@ -53,7 +57,7 @@
                 "destination": "./package/scripts/"
             },
             {
-                "source": "./scripts/fix_trailing_comma.exe",
+                "source": "./scripts/alphabetic_sort.exe",
                 "destination": "./package/scripts/"
             },
             {

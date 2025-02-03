@@ -1,23 +1,44 @@
+Adjust item data like backpack capacity, stack size, value, weight, and damage. Ensure compatibility between multiple mods. 
+Read each part carefully to use properly and resolve doubts. See Example Usage.
+
 WHAT IS THIS?
 
 I've been running into errors with using mods. It seems that two dependencies of many mods - Json Override Framework and External Audio Framework may be broken thus causing the issue.
-Many game files are in JSON and mods change those to add new items / modify existing ones.
-Multiple mods require JSON of vanilla + different mods to be merged while Vortex handles rest of the files.
+Many game files are in JSON5 format and mods change those to add new items / modify existing ones.
+Multiple mods require JSON5 of vanilla + different mods to be merged while Vortex handles rest of the files.
 
-So, I made several scripts to use mods and also some scripts for personal use. Read each part to use properly and resolve doubts.
+So, I made several scripts to use mods and also some scripts for personal use. .
+
+Game Json files can be found in <Game_Folder>/ZS_vanilla/gamedata
+Save file location can be found in C:\Users\<User_Name>\AppData\Local\ZERO_Sievert\<Steam_ID>\save_shared_<slot_number>.dat
+Keep backups.
 
 
+
+SCRIPTS:
+
+Merge JSON Files – Combines vanilla and modded files for seamless integration.
+Edit JSON Fields – Adjusts values like stack size, weight, and damage.
+Track New IDs – Detects new modded items that may break saves.
+Alphabetic Sort - Sorts Json5 files alphabetically - so you can compare the changes you've made easily.
+
+# Deprecated since game uses Json5 - format not important
+Fix JSON Formatting – Removes trailing commas to prevent errors.
+
+ 
 
 HOW TO RUN:
 
-1. Right Click -> Run as Administrator -> run.exe [OPTIONAL - If getting errors]
+1. Right Click -> Run as Administrator -> run.exe [Administrator OPTIONAL - If getting errors]
 2. Load JSON File -> scripts_config.json
 3. Choose script to use -> Set field values -> Run 
 
 # Run also saves changed field values before running script. There is OPTIONALLY a Save button to the right.
 
-OPTIONAL:
-2. Load JSON File -> Any Game JSON (Found under <Game_Folder>/ZS_vanilla\gamedata)
+
+OPTIONAL - Directly edit game file fields:
+1. Right Click -> Run as Administrator -> run.exe [Administrator OPTIONAL - If getting errors]
+2. Load JSON File -> Any Game JSON 
 3. Manually edit values as desired -> Save
 
 # Clicking Run here is meaningless
@@ -26,35 +47,7 @@ OPTIONAL:
 
 SCRIPTS:
 
-1. fix_trailing_comma - 
-
-Use: Fixes trailing commas of native and mod JSON files.
-
-Reason: JSON format is necessary to run scripts. Trailing commas give errors in JSON files.
-IMPORTANT - Good Practice is to run this on all Game and Mod JSON files first and replace them before doing anything else. Else other scripts may run into errors.
-
-Fields: 
-input_folder = folder name containing files to be changed
-output_folder = folder name containing changed files
-# ../. = Do NOT change. Points to location of folder containing run.exe
-
-
-
-2. report_new_id.exe -
-Use: Tracks new ids (items added) and new idds (added items under existing trader ids)
-
-Reason: New items may break existing save. Remove or Add items as needed.
-
-Fields: 
-input_folder = folder name containing files to be changed
-change_folder = folder name containing new files that show how files are to be changed
-output_folder = folder name containing changed files
-# ../. = Do NOT change. Points to location of folder containing run.exe
-# example - input_folder = original or currently existing files, change_folder = mod_files desired to be integrated
-
-
-
-3. field_editor.exe -
+1. field_editor.exe -
 
 Use: Takes a particular field's value of all items. Adds adder to it and then multiplies by multiplier.
  
@@ -62,7 +55,6 @@ Use: Takes a particular field's value of all items. Adds adder to it and then mu
 Reason: You may use to increase stack sizes by a multiplier (ex.10). In Difficulty Settings, divide Loot Amount by the same multiplier(ex. for 10, Amount of single item = 1.0 by default, so it should become 0.10). Else loot spawn will also increase by multiplier.
 
 # In case of ongoing save file, open save file in text editor -> search and replace -> "loot_amount_single_item": 0.1
-# Save file location by default: C:\Users\<User_Name>\AppData\Local\ZERO_Sievert\<Steam_ID>\save_shared_<slot_number>.dat
   
 Any valid numerical fields in game JSON like stack_max, value, weight, damage may be adjusted.
 
@@ -75,7 +67,7 @@ adder: Integer value. Added first.
 multiplier: Integer value. Multiplied second.
 
 
-4. merge_json.exe -
+2. merge_json.exe -
 
 Use: Merge the original or existing JSON files with the same JSON files from mods.
 
@@ -99,6 +91,11 @@ new_id_strategy - ignore or merge
 
 
 
+3. alphabetic_sort.exe -
+Use: Sorts Json5 items alphabetically for easier comparison.
+
+Reason: Easier to see Diff in Notepad++. Keep Plugins->Compare->Ignore Spaces turned on.
+
 HOW DO I SEE CHANGES?
 
 Step 0: You may use Notepad ++ 
@@ -117,4 +114,29 @@ Yellow = Modified lines
 Green = Added lines
 Red = Deleted lines
 Use the navigation arrows in the toolbar to move through changes.
+
+4. report_new_id.exe -
+Use: Tracks new ids (items added) and new idds (added items under existing trader ids)
+
+Reason: New items may break existing save. Remove or Add items as needed.
+
+Fields: 
+input_folder = folder name containing files to be changed
+change_folder = folder name containing new files that show how files are to be changed
+output_folder = folder name containing changed files
+# ../. = Do NOT change. Points to location of folder containing run.exe
+# example - input_folder = original or currently existing files, change_folder = mod_files desired to be integrated
+
+
+EXAMPLE USAGE:
+
+1. Multiply all backpack capacity by 2.
+Paste backpack.json from game files into input folder.
+Put field = weight, adder = 0, multiplier = 2.
+Run.
+Paste file from output folder into game folder.
+
+2. Multiply stack_max, value, weight, damage fields of OG game files - same as above. Just use the game files you want to affect.
+
+
 

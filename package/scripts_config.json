@@ -1,26 +1,29 @@
 {
-    "fix_trailing_comma": {
-        "input_folder": ".././input",
-        "output_folder": ".././output"
+    alphabetic_sort: {
+        input_folder: ".././input",
+        output_folder: ".././change",
     },
-    "report_new_id": {
-        "input_folder": ".././input",
-        "change_folder": ".././change",
-        "output_folder": ".././output"
+    report_new_id: {
+        input_folder: ".././input",
+        change_folder: ".././change",
+        output_folder: ".././output",
     },
-    "field_editor": {
-        "input_folder": ".././input",
-        "output_folder": ".././output",
-        "field": "stack_max",
-        "adder": 0,
-        "multiplier": 10
+    field_editor: {
+        input_folder: ".././input",
+        output_folder: ".././output",
+        field: "weight",
+        adder: 0,
+        multiplier: 2,
     },
-    "merge_json": {
-        "input_folder": ".././input",
-        "change_folder": ".././change",
-        "output_folder": ".././output",
-        "excluded_fields": "['stack_max', 'value']",
-        "array_merge_strategy": "merge",
-        "new_id_strategy": "merge"
-    }
+    merge_json: {
+        input_folder: ".././input",
+        change_folder: ".././change",
+        output_folder: ".././output",
+        excluded_fields: [
+            "stack_max",
+            "value",
+        ],
+        array_merge_strategy: "merge",
+        new_id_strategy: "merge",
+    },
 }

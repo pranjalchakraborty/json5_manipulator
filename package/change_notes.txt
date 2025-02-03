@@ -1,0 +1,6 @@
+v0.2:
+-added change_notes
+-Deprecated fix trailing commas script as game seems to use Json5, not Json format.
+-Added Alphabetical Json sort for easier comparison of changes.
+-Updated all scripts to Json5
+-Added Example Usage

@@ -1,5 +1,5 @@
 import os
-import json
+import json5 as json
 import sys
 import traceback
 
@@ -122,7 +122,7 @@ def main():
                         txt_file.write(f"ID: {extra_id}\n")
                         txt_file.write("Full Object:\n")
                         # Pretty-print the JSON object with indentation
-                        obj_pretty = json.dumps(obj, indent=4)
+                        obj_pretty = json.dumps(obj, indent=4, ensure_ascii=False, quote_keys=True)
                         # Indent each line for better readability
                         obj_pretty_indented = '\n'.join(['    ' + line for line in obj_pretty.splitlines()])
                         txt_file.write(f"{obj_pretty_indented}\n\n")
@@ -134,7 +134,7 @@ def main():
                         txt_file.write(f"ID: {id_key}\n")
                         for item in items:
                             # Pretty-print each item object
-                            item_pretty = json.dumps(item, indent=4)
+                            item_pretty = json.dumps(item, indent=4, ensure_ascii=False, quote_keys=True)
                             # Indent each line for better readability
                             item_pretty_indented = '\n'.join(['    ' + line for line in item_pretty.splitlines()])
                             txt_file.write(f"  - {item_pretty_indented}\n")

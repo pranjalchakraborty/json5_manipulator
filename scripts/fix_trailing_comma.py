@@ -1,5 +1,5 @@
 import os
-import json
+import json5 as json
 import re
 import sys
 import traceback
