@@ -11,9 +11,9 @@
     field_editor: {
         input_folder: ".././input",
         output_folder: ".././output",
-        field: "weight",
+        field: "stack_max",
         adder: 0,
-        multiplier: 2,
+        multiplier: 0.25,
     },
     merge_json: {
         input_folder: ".././input",
@@ -22,6 +22,7 @@
         excluded_fields: [
             "stack_max",
             "value",
+            "description",
         ],
         array_merge_strategy: "merge",
         new_id_strategy: "merge",
