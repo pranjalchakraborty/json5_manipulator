@@ -1,32 +1,3 @@
-Adjust item data like backpack capacity, stack size, value, weight, and damage. Ensure compatibility between multiple mods. 
-Read each part carefully to use properly and resolve doubts. See Example Usage.
-
-WHAT IS THIS?
-
-I've been running into errors with using mods. It seems that two dependencies of many mods - Json Override Framework and External Audio Framework may be broken thus causing the issue.
-Many game files are in JSON5 format and mods change those to add new items / modify existing ones.
-Multiple mods require JSON5 of vanilla + different mods to be merged while Vortex handles rest of the files.
-
-So, I made several scripts to use mods and also some scripts for personal use. .
-
-Game Json files can be found in <Game_Folder>/ZS_vanilla/gamedata
-Save file location can be found in C:\Users\<User_Name>\AppData\Local\ZERO_Sievert\<Steam_ID>\save_shared_<slot_number>.dat
-Keep backups.
-
-
-
-SCRIPTS:
-
-Merge JSON Files – Combines vanilla and modded files for seamless integration.
-Edit JSON Fields – Adjusts values like stack size, weight, and damage.
-Track New IDs – Detects new modded items that may break saves.
-Alphabetic Sort - Sorts Json5 files alphabetically - so you can compare the changes you've made easily.
-
-# Deprecated since game uses Json5 - format not important
-Fix JSON Formatting – Removes trailing commas to prevent errors.
-
- 
-
 HOW TO RUN:
 
 1. Right Click -> Run as Administrator -> run.exe [Administrator OPTIONAL - If getting errors]
@@ -38,7 +9,7 @@ HOW TO RUN:
 
 OPTIONAL - Directly edit game file fields:
 1. Right Click -> Run as Administrator -> run.exe [Administrator OPTIONAL - If getting errors]
-2. Load JSON File -> Any Game JSON 
+2. Load JSON File 
 3. Manually edit values as desired -> Save
 
 # Clicking Run here is meaningless
@@ -52,11 +23,9 @@ SCRIPTS:
 Use: Takes a particular field's value of all items. Adds adder to it and then multiplies by multiplier.
  
 
-Reason: You may use to increase stack sizes by a multiplier (ex.10). In Difficulty Settings, divide Loot Amount by the same multiplier(ex. for 10, Amount of single item = 1.0 by default, so it should become 0.10). Else loot spawn will also increase by multiplier.
+Reason: You may use to increase field by a adder (+5) and/or multiplier (ex.10). 
 
-# In case of ongoing save file, open save file in text editor -> search and replace -> "loot_amount_single_item": 0.1
-  
-Any valid numerical fields in game JSON like stack_max, value, weight, damage may be adjusted.
+Any valid numerical fields may be adjusted.
 
 
 Fields: 
@@ -71,10 +40,7 @@ multiplier: Integer value. Multiplied second.
 
 Use: Merge the original or existing JSON files with the same JSON files from mods.
 
-Reason: You may use to update items or add new items or use multiple mods together.
-Many game files are in JSON and mods change those to add new items / modify existing ones.
-Multiple mods require JSON of vanilla + different mods to be merged while Vortex handles rest of the files.
-
+Reason: Merge.
 
 Fields: 
 input_folder = folder name containing files to be changed
@@ -82,13 +48,9 @@ change_folder = folder name containing new files that show how files are to be c
 output_folder = folder name containing changed files
 # ../. = Do NOT change. Points to location of folder containing run.exe
 # example - input_folder = original or currently existing files, change_folder = mod_files desired to be integrated into existing files
-# If multiple mods add same file, you must merge them multiple times ex. ammo.json of vanilla with mod1 first then move the output to input and merge with mod2
-excluded_fields = array of fields that you don't want to be changed
+# If multiple mods add same file, you must merge them multiple times 
 array_merge_strategy - array of strings - ignore or merge or replace
 new_id_strategy - ignore or merge
-# Default is merge but this means new items will be added and new game needs to be started. Ignore setting to edit existing items and play ongoing save.
-# ex. Array of strings are there in w_mod.json - weapon_id = [gun_ids this gun mod can be used with] and repair_weapon.json - caliber = [gun caliber_ids this repair kit can repair]
-
 
 
 3. alphabetic_sort.exe -
@@ -126,17 +88,6 @@ change_folder = folder name containing new files that show how files are to be c
 output_folder = folder name containing changed files
 # ../. = Do NOT change. Points to location of folder containing run.exe
 # example - input_folder = original or currently existing files, change_folder = mod_files desired to be integrated
-
-
-EXAMPLE USAGE:
-
-1. Multiply all backpack capacity by 2.
-Paste backpack.json from game files into input folder.
-Put field = weight, adder = 0, multiplier = 2.
-Run.
-Paste file from output folder into game folder.
-
-2. Multiply stack_max, value, weight, damage fields of OG game files - same as above. Just use the game files you want to affect.
 
 
 

@@ -1,8 +1,8 @@
-(['C:\\Users\\Admin\\Downloads\\New '
-  'folder\\zero_sievert\\scripts\\alphabetic_sort.py'],
- ['C:\\Users\\Admin\\Downloads\\New folder\\zero_sievert\\scripts'],
+(['C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\scripts\\alphabetic_sort.py'],
+ ['C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\scripts'],
  [],
- [('C:\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks',
+ [('C:\\Python312\\Lib\\site-packages\\numpy\\_pyinstaller', 0),
+  ('C:\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks',
    -1000),
   ('C:\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib', -1000)],
  {},
@@ -19,8 +19,7 @@
    'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
   ('alphabetic_sort',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\scripts\\alphabetic_sort.py',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\scripts\\alphabetic_sort.py',
    'PYSOURCE')],
  [('inspect', 'C:\\Python312\\Lib\\inspect.py', 'PYMODULE'),
   ('importlib', 'C:\\Python312\\Lib\\importlib\\__init__.py', 'PYMODULE'),
@@ -192,6 +191,5 @@
  [],
  [],
  [('base_library.zip',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\build\\alphabetic_sort.exe\\base_library.zip',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\build\\alphabetic_sort.exe\\base_library.zip',
    'DATA')])

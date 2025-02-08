@@ -1,8 +1,8 @@
-(['C:\\Users\\Admin\\Downloads\\New '
-  'folder\\zero_sievert\\scripts\\field_editor.py'],
- ['C:\\Users\\Admin\\Downloads\\New folder\\zero_sievert\\scripts'],
+(['C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\scripts\\field_editor.py'],
+ ['C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\scripts'],
  [],
- [('C:\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks',
+ [('C:\\Python312\\Lib\\site-packages\\numpy\\_pyinstaller', 0),
+  ('C:\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib\\stdhooks',
    -1000),
   ('C:\\Python312\\Lib\\site-packages\\_pyinstaller_hooks_contrib', -1000)],
  {},
@@ -19,8 +19,7 @@
    'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
   ('field_editor',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\scripts\\field_editor.py',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\scripts\\field_editor.py',
    'PYSOURCE')],
  [('inspect', 'C:\\Python312\\Lib\\inspect.py', 'PYMODULE'),
   ('importlib', 'C:\\Python312\\Lib\\importlib\\__init__.py', 'PYMODULE'),
@@ -169,8 +168,8 @@
   ('dis', 'C:\\Python312\\Lib\\dis.py', 'PYMODULE'),
   ('opcode', 'C:\\Python312\\Lib\\opcode.py', 'PYMODULE'),
   ('ast', 'C:\\Python312\\Lib\\ast.py', 'PYMODULE'),
-  ('_py_abc', 'C:\\Python312\\Lib\\_py_abc.py', 'PYMODULE'),
   ('stringprep', 'C:\\Python312\\Lib\\stringprep.py', 'PYMODULE'),
+  ('_py_abc', 'C:\\Python312\\Lib\\_py_abc.py', 'PYMODULE'),
   ('tracemalloc', 'C:\\Python312\\Lib\\tracemalloc.py', 'PYMODULE'),
   ('typing', 'C:\\Python312\\Lib\\typing.py', 'PYMODULE'),
   ('json5',
@@ -198,6 +197,5 @@
  [],
  [],
  [('base_library.zip',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\build\\field_editor.exe\\base_library.zip',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\build\\field_editor.exe\\base_library.zip',
    'DATA')])

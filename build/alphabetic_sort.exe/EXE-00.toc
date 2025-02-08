@@ -1,5 +1,4 @@
-('C:\\Users\\Admin\\Downloads\\New '
- 'folder\\zero_sievert\\scripts\\alphabetic_sort.exe',
+('C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\scripts\\alphabetic_sort.exe',
  True,
  False,
  False,
@@ -30,32 +29,25 @@
  None,
  None,
  None,
- 'C:\\Users\\Admin\\Downloads\\New '
- 'folder\\zero_sievert\\build\\alphabetic_sort.exe\\alphabetic_sort.pkg',
+ 'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\build\\alphabetic_sort.exe\\alphabetic_sort.pkg',
  [('pyi-contents-directory _internal', '', 'OPTION'),
   ('PYZ-00.pyz',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\build\\alphabetic_sort.exe\\PYZ-00.pyz',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\build\\alphabetic_sort.exe\\PYZ-00.pyz',
    'PYZ'),
   ('struct',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\build\\alphabetic_sort.exe\\localpycs\\struct.pyc',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\build\\alphabetic_sort.exe\\localpycs\\struct.pyc',
    'PYMODULE'),
   ('pyimod01_archive',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\build\\alphabetic_sort.exe\\localpycs\\pyimod01_archive.pyc',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\build\\alphabetic_sort.exe\\localpycs\\pyimod01_archive.pyc',
    'PYMODULE'),
   ('pyimod02_importers',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\build\\alphabetic_sort.exe\\localpycs\\pyimod02_importers.pyc',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\build\\alphabetic_sort.exe\\localpycs\\pyimod02_importers.pyc',
    'PYMODULE'),
   ('pyimod03_ctypes',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\build\\alphabetic_sort.exe\\localpycs\\pyimod03_ctypes.pyc',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\build\\alphabetic_sort.exe\\localpycs\\pyimod03_ctypes.pyc',
    'PYMODULE'),
   ('pyimod04_pywin32',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\build\\alphabetic_sort.exe\\localpycs\\pyimod04_pywin32.pyc',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\build\\alphabetic_sort.exe\\localpycs\\pyimod04_pywin32.pyc',
    'PYMODULE'),
   ('pyiboot01_bootstrap',
    'C:\\Python312\\Lib\\site-packages\\PyInstaller\\loader\\pyiboot01_bootstrap.py',
@@ -64,8 +56,7 @@
    'C:\\Python312\\Lib\\site-packages\\PyInstaller\\hooks\\rthooks\\pyi_rth_inspect.py',
    'PYSOURCE'),
   ('alphabetic_sort',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\scripts\\alphabetic_sort.py',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\scripts\\alphabetic_sort.py',
    'PYSOURCE'),
   ('python312.dll', 'C:\\Python312\\python312.dll', 'BINARY'),
   ('_decimal.pyd', 'C:\\Python312\\DLLs\\_decimal.pyd', 'EXTENSION'),
@@ -78,13 +69,12 @@
   ('VCRUNTIME140.dll', 'C:\\Python312\\VCRUNTIME140.dll', 'BINARY'),
   ('libcrypto-3.dll', 'C:\\Python312\\DLLs\\libcrypto-3.dll', 'BINARY'),
   ('base_library.zip',
-   'C:\\Users\\Admin\\Downloads\\New '
-   'folder\\zero_sievert\\build\\alphabetic_sort.exe\\base_library.zip',
+   'C:\\Users\\Admin\\Downloads\\codes\\json5_manipulator\\build\\alphabetic_sort.exe\\base_library.zip',
    'DATA')],
  [],
  False,
  False,
- 1738286267,
+ 1738981300,
  [('run.exe',
    'C:\\Python312\\Lib\\site-packages\\PyInstaller\\bootloader\\Windows-64bit-intel\\run.exe',
    'EXECUTABLE')],
